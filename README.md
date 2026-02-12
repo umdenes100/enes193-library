@@ -31,7 +31,8 @@ To use the package, you have to direct the compiler to include it in your code. 
 ### Enes193.begin()
 `Enes193.begin(team_name: str, team_type: str, aruco_id: int, room_num: int)`
 
-**Example:**`Enes193.begin("LTFs", "FIRE", 105, 1116)`
+**Example: **`Enes193.begin("LTFs", "FIRE", 105, 1116)`
+
 Establishes communication with the Vision System and allows for the use of all other enes193 commands
 - team_name: Name of the team that will show up in the Vision System
 - team_type: Type of mission your team is running.
@@ -62,7 +63,7 @@ Returns true if the Acebott is connected to the Vision System, false otherwise. 
 ### Enes193.print()
 `Enes193.print(message: str)`
 
-**Example:**`Enes193.print("On our way to mission site.")`
+**Example: **`Enes193.print("On our way to mission site.")`
 
 Sends a message to the vision system with a new line. Any messages sent after will be printed in a new line below the ' println'
 
@@ -82,6 +83,10 @@ Valid calls for **DATA**:
 - `Enes193.mission(MAGNETISM, MAGNETIC)`
 - `Enes193.mission(MAGNETISM, NOT_MAGNETIC)`
 
+Valid calls for **HYDROGEN**:
+- `Enes193.mission(LED_COLOR, COLOR)` COLOR options are WHITE, RED, YELLOW, GREEN, and BLUE
+- `Enes193.mission(VOLTAGE_OUTPUT, VOLTAGE_3)` * VOLTAGE options are VOLTAGE_1 through VOLTAGE_5*
+
 Valid calls for **MATERIAL**:
 - `Enes193.mission(WEIGHT, HEAVY)`
 - `Enes193.mission(WEIGHT, MEDIUM)`
@@ -94,6 +99,9 @@ Valid calls for **FIRE**:
 - `Enes193.mission(TOPOGRAPHY, TOP_A)`
 - `Enes193.mission(TOPOGRAPHY, TOP_B)`
 - `Enes193.mission(TOPOGRAPHY, TOP_C)`
+
+Valid calls for **SEED**:
+- `Enes193.mission(LOCATION, plot)` where plot is "BOTH" "NEITHER" "ADJACENT" or "DIAGONAL" for plantable substrate.
 
 Valid calls for **WATER**:
 - `Enes193.mission(DEPTH, i)` i is in mm
