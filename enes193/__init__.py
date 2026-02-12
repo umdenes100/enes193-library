@@ -1,7 +1,7 @@
 # enes193/__init__.py
 
 from .Enes193 import Enes193
-from .Tank import Tank
+from .tank import tank
 from . import mission as _m
 
 # Export constants normally (optional, still useful)

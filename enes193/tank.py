@@ -1,7 +1,7 @@
 from machine import Pin, PWM, time_pulse_us
 import time
 
-class Tank:
+class tank:
     def __init__(self):
         # Motor Control Pins
         self.pwma = PWM(Pin(14), freq=1000)  # A = Right motors
@@ -70,4 +70,4 @@ class Tank:
                 raise OSError('Out of range')
             raise ex
 
-Tank = Tank()
+tank = tank()
