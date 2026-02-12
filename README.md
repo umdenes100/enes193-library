@@ -1,4 +1,4 @@
-# Enes193 Library
+# ENES193 Library
 
 ### Package Download and Installation 
 In this section, you will download the package and upload it to your microcontroller through Thonny IDE. 
@@ -7,13 +7,15 @@ In this section, you will download the package and upload it to your microcontro
 3) Using **Install from local file**, find the file on your computer and upload it to your device.
 
 ### Usage
-`from enes193 import Enes193
-from enes193.tank import tank`
+`from enes193.tank import tank` -> import tank functions
+
+`from enes193 import Enes193` -> import vision system functions
 
 To use the package, you have to direct the compiler to include it in your code. Add it manually by typing the above at the very top of your file.
 
 ## Tank Library
 ### Functions
+
 `tank.turn_off_motors()` sets the pwm of both motors to 0.
 
 `tank.set_left_PWM(pwm)` sets motors on left speeds to specified pwm (pwm: -1023 to 1023).
@@ -24,11 +26,11 @@ To use the package, you have to direct the compiler to include it in your code. 
 
 `tank.set_servo(deg)` sets servo motor to specified angle (deg: 0-180).
 
-## Enes193 Library (Vision System Communication)
+## ENES193 Library (Vision System Communication)
 ### Functions
 ### Enes193.begin()
 `Enes193.begin(team_name: str, team_type: str, aruco_id: int, room_num: int)`
-
+**Example:**`Enes193.begin("LTFs", "FIRE", 105, 1116)`
 Establishes communication with the Vision System and allows for the use of all other enes100 commands
 - team_name: Name of the team that will show up in the Vision System
 - team_type: Type of mission your team is running.
