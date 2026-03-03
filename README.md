@@ -48,10 +48,10 @@ The Aruco Marker has 4 values
 - visibility: whether the ArUco marker is visible (true or false)
 
 These values can be queried by using the following commands:
-- `Enes193.x`
-- `Enes193.y`
-- `Enes193.theta`
-- `Enes193.is_visible`
+- `Enes193.getX()`
+- `Enes193.getY()`
+- `Enes193.getTheta()`
+- `Enes193.isvisible()`
 
 Enes193.get variants will make sure you get the latest data available to you about your OTV's location. There is no need to save these as a separate variable.
 
