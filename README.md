@@ -51,7 +51,7 @@ These values can be queried by using the following commands:
 - `Enes193.getX()`
 - `Enes193.getY()`
 - `Enes193.getTheta()`
-- `Enes193.isvisible()`
+- `Enes193.isVisible()`
 
 Enes193.get variants will make sure you get the latest data available to you about your OTV's location. There is no need to save these as a separate variable.
 
